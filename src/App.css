@@ -1,38 +1,94 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+  overflow-x: hidden;
+  color: #333e48;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: #000;
+}
+img {
+  vertical-align: middle;
+}
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+}
+.container{
+  max-width: 85%;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.d_flex{
+  display: flex;
+  justify-content: space-between;
+}
+.c_flex{
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.f_flex{
+    display: flex;
+}
+.w_100{
+  width:100%;
+}
+.items_center{
+ align-items: center;
+}
+.text_center{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sec_margin{
+  margin-top: 50px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.mt-100{
+  margin-top: 100px;
+}
+.product_name h5 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0062bd;
+  /* padding: 30px 10px 10px 10px; */
+  height: 26px;
+}
+.product_price h5 {
+  margin-top: 20px;
+  font-weight: 400;
+  color: #334141;
+  position: relative;
+  width: 100%;
+}
+@media (max-width:991px) {
+  .product_name h5{
+    font-size: 11px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .product_price h5 {
+    font-size: 14px;
   }
-  to {
-    transform: rotate(360deg);
+  .add_product{
+    visibility: hidden;
   }
+  
 }

@@ -1,0 +1,42 @@
+.ads_content {
+  background-image: url(/public/images/adsimg.jpg);
+  text-transform: uppercase;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:130px;
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  padding: 30px 0px 0px 40px;
+}
+
+.ads_content span{
+ font-weight: 600;
+}
+.ads_btn{
+    margin-left: 50px;
+    font-size: 16px;
+    background-color: #fed700;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.ads_btn span{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+@media (max-width:991px) {
+  .ads_content label{
+    font-size: 18px;
+  }
+}
+@media (max-width:767px) {
+  .ads_content {
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-bottom:9px;
+  }
+}
